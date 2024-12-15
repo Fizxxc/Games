@@ -78,6 +78,46 @@
             font-size: 1.5rem;
             color: #ffd700;
         }
+        .footer {
+            background-color: #0f2027, #203a43, #2c5364;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer a {
+            color: #1abc9c;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            color: #16a085;
+            text-decoration: underline;
+        }
+
+        .footer p {
+            margin: 10px 0;
+        }
+
+        .footer .social-icons {
+            margin: 10px 0;
+        }
+
+        .footer .social-icons a {
+            margin: 0 5px;
+            display: inline-block;
+        }
+
+        .footer .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
     </style>
 </head>
 <body>
@@ -91,7 +131,15 @@
         <p class="result" id="result"></p>
         <p class="score" id="score">Score: 0</p>
     </div>
-
+    <div class="footer">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@fizzxboyz?_t=8sEtoGUdKs4&_r=1" target="_blank"><img src="https://img.icons8.com/ios-filled/50/1abc9c/tiktok.png" alt="Tiktok"></a>
+            <a href="https://www.youtube.com/@fizzx598" target="_blank"><img src="https://img.icons8.com/ios-filled/50/1abc9c/youtube.png" alt="Youtube"></a>
+            <a href="#" target="_blank"><img src="https://img.icons8.com/ios-filled/50/1abc9c/instagram-new.png" alt="Instagram"></a>
+        </div>
+        <a href="privacy.html">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </div>
     <script>
             const puzzles = [
         { question: "I am not alive, but I grow; I don’t have lungs, but I need air; I don’t have a mouth, and yet water kills me. What am I?", answer: "fire" },
@@ -110,37 +158,6 @@
         { question: "What has a neck but no head?", answer: "bottle" },
         { question: "What runs but never walks, has a mouth but never talks, has a head but never weeps?", answer: "river" },
         { question: "I have a tail, a head, but no body. What am I?", answer: "coin" },
-        { question: "What has cities, but no houses; forests, but no trees; rivers, but no water?", answer: "map" },
-        { question: "The more you remove, the bigger I get. What am I?", answer: "hole" },
-        { question: "What is full of holes but still holds a lot of weight?", answer: "net" },
-        { question: "What belongs to you but is most often used by others?", answer: "your name" },
-        { question: "What is always in front of you but can’t be seen?", answer: "future" },
-        { question: "What can travel around the world while staying in one corner?", answer: "stamp" },
-        { question: "What is as light as a feather, yet no man can hold it for long?", answer: "breath" },
-        { question: "What has a mouth but never speaks, a head but never thinks?", answer: "river" },
-        { question: "I go in hard, come out soft. What am I?", answer: "gum" },
-        { question: "What has no beginning, middle, or end, but touches everyone?", answer: "the future" },
-        { question: "What can you catch but not throw?", answer: "cold" },
-        { question: "What has many teeth but can’t bite?", answer: "comb" },
-        { question: "What has a thumb and four fingers but is not alive?", answer: "glove" },
-        { question: "I’m tall when I’m young, and I’m short when I’m old. What am I?", answer: "candle" },
-        { question: "What comes down but never goes up?", answer: "rain" },
-        { question: "What has one eye but can’t see?", answer: "needle" },
-        { question: "What gets sharper the more you use it?", answer: "knife" },
-        { question: "What has a floor but no walls?", answer: "room" },
-        { question: "What belongs to you, but others use it more than you do?", answer: "your name" },
-        { question: "What goes up but never comes down?", answer: "age" },
-        { question: "What has no legs but can walk?", answer: "wheel" },
-        { question: "I’m not alive, but I grow; I don’t have lungs, but I need air. What am I?", answer: "plant" },
-        { question: "What comes after midnight but before morning?", answer: "today" },
-        { question: "What is always in front of you but can’t be seen?", answer: "future" },
-        { question: "What has a head, a tail, but no body?", answer: "coin" },
-        { question: "I shrink every time you use me. What am I?", answer: "eraser" },
-        { question: "What never asks questions but gets answered all the time?", answer: "phone" },
-        { question: "I have keys but no locks. I have space but no room. What am I?", answer: "keyboard" },
-        { question: "I’m round but have no shape. What am I?", answer: "ball" },
-        { question: "What is so fragile that saying its name breaks it?", answer: "silence" },
-        { question: "What starts with a T, ends with a T, and has T in it?", answer: "teapot" }
     ];
 
         let currentPuzzleIndex = 0;
